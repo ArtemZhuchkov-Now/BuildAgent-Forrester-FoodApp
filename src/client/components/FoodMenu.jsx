@@ -15,7 +15,7 @@ export default function FoodMenu({ items, onAddToCart }) {
 
   const filteredItems = selectedCategory === 'all' 
     ? items 
-    : items.filter(item => display(item.category) === selectedCategory);
+    : items.filter(item => value(item.category) === selectedCategory);
 
   const CategoryFilter = () => (
     <div className="category-filter">
@@ -47,7 +47,7 @@ export default function FoodMenu({ items, onAddToCart }) {
         id: value(item.sys_id),
         name: display(item.name),
         price: display(item.price),
-        category: display(item.category)
+        category: value(item.category)
       });
       setIsAdding(false);
     };
