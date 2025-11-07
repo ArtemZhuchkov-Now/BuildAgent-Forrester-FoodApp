@@ -1,0 +1,6 @@
+{
+  "scope": "x_snc_forrester_co",
+  "scopeId": "138b61153b857610cdf29c0f23e45a68",
+  "name": "Forrester Co",
+  "tsconfigPath": "./src/server/tsconfig.json"
+}
